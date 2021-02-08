@@ -15,7 +15,7 @@
     "generate": "nuxt generate",
     "copy": "node devops/copy",
     "copyNetlify": "node devops/copy-netlify.js",
-    "netlify-deploy": "netlify deploy --prod --dir dist --site f23800b5-2848-449a-acd3-716da44f5fff --open",
+    "netlify-deploy": "netlify deploy --prod --dir dist --site 9859afa0-5dac-4a1d-be24-4e1dc37c7c16 --open",
     "live": "run-s generate copyNetlify netlify-deploy",
     "tabS": "node devops/tab.js",
     "tab": "run-s build copy tabS",
