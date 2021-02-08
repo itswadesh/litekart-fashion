@@ -1,5 +1,5 @@
 const dev = process.env.NODE_ENV !== 'production'
-const HTTP_ENDPOINT = 'https://tapi.litekart.in'
+const HTTP_ENDPOINT = 'https://next-api.litekart.in'
 const server = dev ? 'http://localhost:3000' : 'https://fashion.litekart.in'
 
 export default {
