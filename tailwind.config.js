@@ -5,7 +5,16 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-  theme: {},
+  theme: {
+  extend:{
+    fontSize:{
+      '8xl': '6rem'
+    },
+    spacing:{
+      '96':'28rem'
+    }
+  }
+},
   variants: {},
   plugins: [],
   purge: {

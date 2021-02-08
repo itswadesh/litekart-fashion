@@ -1,49 +1,35 @@
 <template>
-  <div>
-    <div class="flex justify-around py-4">
-      <div class="flex">
-        <img src="/img/fb.png" class="object-cover w-8 h-8 mx-2" />
-        <a
-          href="http://172.146.4.168/vigilance_portal/integrity_pledge.aspx"
-          class="text-blue-700 underline"
-        >Vigilance / सतर्कता SELF-DECLARATION ON TRAVEL HISTORY OUT OF KORAPUT DISTRICT</a>
+   <nav class="container mx-auto flex items-center justify-between pt-8 font-bold">
+      <div>
+          <h1 class="text-xl -mt-6"><span class="text-5xl item-center" style="color:orange">F</span>ashion Store</h1>
       </div>
-      <div class="flex">
-        <div class>भाषा चयन / Language Selection:</div>
-        <div class="flex px-2">
-          <div class="flex px-1">
-            <button
-              class="w-3 h-3 mx-2 my-auto border border-gray-300 rounded-full hover:bg-blue-600 focus:outline-none"
-            ></button>
-            <div>हिंदी</div>
+      <div class="flex items-center">
+          <div class="">
+              <a class="ml-10 text-sm hover:text-yellow-600" href="#">New</a>
+              <a class="ml-10 text-sm hover:text-yellow-600" href="#">Catalogue</a>
+              <a class="ml-10 text-sm hover:text-yellow-600" href="#">Payment</a>
+              <a class="ml-10 text-sm hover:text-yellow-600" href="#">Shipping</a>
+              <a class="ml-10 text-sm hover:text-yellow-600" href="#">Blog</a>
+              <a class="ml-10 text-sm hover:text-yellow-600" href="#">Wishlist</a>
+              <a class="ml-10 text-sm hover:text-yellow-600" href="#">Contact</a>
           </div>
-          <div class="flex px-1">
-            <button
-              class="w-3 h-3 mx-2 my-auto border border-gray-300 rounded-full hover:bg-blue-600 focus:outline-none"
-            ></button>
-            <div>English</div>
+          <div class="flex items-center ml-40">
+           <a class ="pl-12" href="#"><img src="/img/user.svg" alt=""></a>
+           <a class ="pl-12" href="#"><img  src="/img/search.svg" alt=""></a>
+           <a class ="pl-12" href="#"><img  src="/img/shopping-bag.svg" alt=""></a>
           </div>
-        </div>
       </div>
-    </div>
-  </div>
+  </nav>
+  
 </template>
+
 <script>
-import Logo from '~/components/Logo.vue'
-import {
-  BellIcon,
-  SettingsIcon,
-  CheckCircleIcon,
-  SlidersIcon,
-  SearchIcon,
-} from 'vue-feather-icons'
+
 export default {
-  components: {
-    BellIcon,
-    SettingsIcon,
-    CheckCircleIcon,
-    SlidersIcon,
-    SearchIcon,
-  },
+
 }
 </script>
+
+<style>
+
+</style>
