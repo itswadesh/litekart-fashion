@@ -44,7 +44,6 @@
   </div>
 </template>
 <script>
-import Logo from '~/components/Logo.vue'
 import { MoreHorizontalIcon, GlobeIcon } from 'vue-feather-icons'
 export default {
   components: {

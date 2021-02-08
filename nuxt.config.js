@@ -1,5 +1,4 @@
 export default {
-  mode: 'universal',
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -13,6 +12,9 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+  ssr:false,
+  components: true,
+  plugins:[{ src: '~/plugins/lazy.js', mode: 'client' },],
   buildModules: ['@nuxtjs/tailwindcss', 'nuxt-webfontloader'],
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa'],
   webfontloader: {

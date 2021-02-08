@@ -131,7 +131,6 @@ export default {}
 <style>
 </style>
 <script>
-import Logo from '~/components/Logo.vue'
 import {
   BookOpenIcon,
   MessageSquareIcon,

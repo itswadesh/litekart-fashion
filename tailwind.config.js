@@ -11,7 +11,9 @@ module.exports = {
       '8xl': '6rem'
     },
     spacing:{
-      '96':'28rem'
+      72: '18rem',
+      84: '21rem',
+      96: '24rem',
     }
   }
 },

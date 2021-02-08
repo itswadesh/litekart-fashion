@@ -125,7 +125,6 @@
     </div>-->
   </div>
 </template><script>
-import Logo from '~/components/Logo.vue'
 import {
   MessageSquareIcon,
   CalendarIcon,

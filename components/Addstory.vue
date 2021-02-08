@@ -42,7 +42,6 @@
   >The best way to find yourself is to lose yourself in the service of others. - Mahatma Gandhi</div>
 </template>
 <script>
-import Logo from '~/components/Logo.vue'
 import {
   MoreHorizontalIcon,
   ImageIcon,
