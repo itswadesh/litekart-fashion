@@ -9,3 +9,4 @@ prod
 .idea
 static/sw.js
 .vscode
+.DS_Store

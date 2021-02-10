@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full mt-5 text-xs border menu">
+  <div class="w-full mt-5 text-xs  menu">
     <div class="px-8 py-3 mx-2 bg-white rounded-lg">
       <h1 class="my-6 font-bold">Menu</h1>
       <button

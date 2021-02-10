@@ -1,5 +1,14 @@
 <template>
-  <div class>
+<div>
+  <Navbar/>
+  <Header/>
+  <Section/>
+  <Section2/>
+  <Section3/>
+  <Footer/>
+
+</div>
+  <!-- <div class>
     <Navbar />
     <SliderBar />
 
@@ -15,35 +24,50 @@
       </div>
       <div class="px-2 pt-2 bg-gray-200 xl:flex-col lg:hidden xl:flex lg:w-1/4 lg:px-10">
         <Upcomingevents />
-        <instantgames />
+        <Instantgames />
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 <script>
+
 import Navbar from '~/components/Navbar'
-import Menu from '~/components/Menu'
-import Addstory from '~/components/Addstory'
-import Feeds from '~/components/Feeds'
-import Upcomingevents from '~/components/Upcomingevents'
-import Instantgames from '~/components/Instantgames'
+import Header from '~/components/Header'
+import Section from '~/components/Section'
+import Section2 from '~/components/Section2'
+import Section3 from '~/components/Section3'
+import Footer from '~/components/Footer'
+
+
+// import Menu from '~/components/Menu'
+// import Addstory from '~/components/Addstory'
+// import Feeds from '~/components/Feeds'
+// import Upcomingevents from '~/components/Upcomingevents'
+// import Instantgames from '~/components/Instantgames'
 import {} from 'vue-feather-icons'
 export default {
   components: {
     Navbar,
-    Menu,
-    Addstory,
-    Feeds,
-    Upcomingevents,
-    Instantgames,
+    Header,
+    Section,
+    Section2,
+    Section3,
+    Footer
+
+    // Navbar,
+    // Menu,
+    // Addstory,
+    // Feeds,
+    // Upcomingevents,
+    // Instantgames,
   },
 }
 </script>
 <style scoped>
-.menu {
+/* .menu {
   border-top-right-radius: 40px;
 }
 .ip {
   border-top-left-radius: 100px;
-}
+} */
 </style>

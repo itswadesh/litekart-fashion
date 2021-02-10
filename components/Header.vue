@@ -1,19 +1,22 @@
 <template>
-  <header class="container mx-auto">
+  <header class="pt-1">
 
     <div class="slider">
       <div class="slide">
         <div class="relative flex header_height">
 
           <div class="bg-purple-200 w-2/3">
-            <img class="w-3/5 h-3/5" src="/img/cosmetic-bottle.png" alt="" />
+            <img class="h-full  ml-16" src="/img/cosmetic-bottle.png" alt="" />
           </div>
 
-          <div class="absolute px-40 hero_heading">
+          <div class="absolute px-60 hero_heading">
             <h4 class="text-3xl text-gray-600">New</h4>
             <h1 class="text-8xl font-md leading-tight mb-4 text-white">Shower Gel</h1>
-            <p class="w-96">
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, hic. Quasi est incidunt eum numquam hic recusandae sapiente odio officiis delectus eum maxime at magni.
+            <p class="text-pink-800 text-xl">Experience Luxury</p>
+            <p class="mt-2">BODY FIRST : Bath Essentials To Add To Your Routine This Year</p>
+            <p class="mt-2">
+                From plush dead sea minerals to bathing bars that smell better than your favorite dessert, we love these formulas hyper tailored to coddle and protect every last inch of our skin.
+                Read More On Fashion Store's Beauty Book >
             </p>
           </div>
 
