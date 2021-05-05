@@ -1,21 +1,21 @@
 <template>
   <div>
     <div class="relative flex justify-center w-full overflow-hidden rlative">
-      <!-- <video
-        class="object-cover w-full h-64"
-        :src="'/video.mp4'"
+      <video
+        class="object-cover w-full h-96"
+        :src="'https://res.cloudinary.com/itswadesh/video/upload/v1620190766/Anne/video.mp4'"
         autoplay
         loop
         muted
-      /> -->
-      <div>
+      />
+      <!-- <div>
         <iframe
           src="https://player.vimeo.com/video/545331344?title=0&byline=0&portrait=0&speed=0&badge=0&loop=1&autoplay=1&muted=1&player_id=0&app_id=58479/embed"
           width="100%"
           frameborder="0"
           class="object-cover w-full h-64"
         />
-      </div>
+      </div> -->
       <button
         class="absolute bottom-0 px-8 py-4 mt-20 text-center text-white rounded-t-lg shadow-lg bg-primary-500 hover:bg-gray-200 hover:text-primary-500"
       >
