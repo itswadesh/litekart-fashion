@@ -16,14 +16,14 @@ module.exports = {
       colors: {
         primary: {
           200: '#FCD34D', //light yellow
-          500: '#B26E12', //golden
+          500: '#FB7901', //golden
         },
         secondary: {
           100: '#dff7d5', //very light green
           200: '#32CD32', //green
           300: '#9CF1FE', //light blue
           400: '#78f547', //light green
-          500: '#32AFC8;', //blue
+          500: '#000000', //blue
         },
         accent: {
           100: '#ffe0db', //very light red
