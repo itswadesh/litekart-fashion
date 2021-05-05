@@ -4,7 +4,7 @@ export default ({ store, app: {} }) => {
   Vue.use(vueLazy, {
     observer: true,
     preLoad: 1.3,
-    error: '/2x1.png',
+    error: '/icon.png',
     loading: '/loading.svg',
     attempt: 1,
     adapter: {
@@ -15,11 +15,10 @@ export default ({ store, app: {} }) => {
     },
     filter: {
       progressive(listener, options) {
-        const CDN = ''
-        // const CDN = "https://ik.imagekit.io/3wzatecz51w3i/shopnx/";
+        const CDN = store.state.settings && store.state.settings.CDN_URL
         listener.el.setAttribute('lazy-progressive', 'true')
-        if (listener.src) listener.src = CDN + listener.src
-        listener.loading = listener.src + '?tr=w-2,h-3'
+        listener.loading = CDN + listener.src + '?tr=w-3,h-2'
+        listener.src = CDN + listener.src
       },
       error(listender, Init) {},
     },

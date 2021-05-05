@@ -1,42 +1,91 @@
-const dev = process.env.NODE_ENV !== 'production'
-const HTTP_ENDPOINT = 'https://next-api.litekart.in'
-const server = dev ? 'http://localhost:3000' : 'https://fashion.litekart.in'
-
+import { join, resolve, basename } from 'path'
+import { I18N } from './config/lang'
+import { firebaseConfig } from './config/firebase'
+import {
+  HTTP_ENDPOINT,
+  ONESIGNAL_APP_ID,
+  WWW_URL,
+  head,
+  dev,
+  tailwindcss,
+  PORT,
+  GOOGLE_ANALYTICS_ID,
+} from './shared/config/index'
+console.log('zzzzzzzzzzzzzzzzzzzzzzzzzzz', HTTP_ENDPOINT, WWW_URL)
+// const whitelist = ['preview-img-item']
+const whitelistPatterns = [/(slick-+|swal2-)/]
 export default {
-  head: {
-    title: process.env.npm_package_name || '',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || '',
-      },
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  server: {
+    host: '0.0.0.0',
+    port: PORT,
   },
-  ssr:false,
+  head,
+  css: [
+    '~/shared/assets/css/form.css',
+    '~/assets/fonts.css',
+    '~/shared/assets/css/animations.css',
+  ],
+  plugins: [
+    { src: '~/plugins/ripple.js', ssr: false },
+    { src: '~/plugins/lazy.js', ssr: false },
+    { src: '~/plugins/slick.js' },
+    { src: '~/plugins/scroll.js', ssr: false },
+    { src: '~/plugins/filters.js' },
+    { src: '~/plugins/vue-simple-photoswipe.js', ssr: false },
+    { src: '~/plugins/VueYoutube.js', ssr: false },
+    // { src: '~/plugins/agora.js', ssr: false },
+    { src: '~/plugins/dir', ssr: true },
+    // { src: '~/plugins/init', ssr: false },
+    // { src: '~/plugins/directives.js', ssr:false },
+  ],
   components: true,
-  plugins:[{ src: '~/plugins/lazy.js', mode: 'client' },],
   buildModules: [
     '@nuxtjs/apollo',
     '@nuxtjs/tailwindcss',
+    'nuxt-purgecss',
     'nuxt-webfontloader',
     '@nuxtjs/google-analytics',
+    '@nuxtjs/pwa',
+    'vue-social-sharing/nuxt',
+    // 'nuxt-vite',
   ],
   modules: [
     '@nuxtjs/robots',
     '@nuxtjs/toast',
     '@nuxtjs/proxy',
-    '@nuxtjs/pwa',
+    '@nuxtjs/axios',
     '@nuxtjs/dotenv',
     'cookie-universal-nuxt',
+    'vue-sweetalert2/nuxt',
+    ['nuxt-i18n', I18N],
+    ['@nuxtjs/firebase', firebaseConfig],
   ],
+  pageTransition: 'slide-bottom',
+  layoutTransition: 'slide-bottom',
+  toast: {
+    singleton: true,
+  },
+  purgeCSS: {
+    // whitelist,
+    whitelistPatterns,
+  },
+  tailwindcss,
+  googleAnalytics: {
+    id: GOOGLE_ANALYTICS_ID,
+  },
+  webfontloader: {
+    google: {
+      families: ['Inter:400,700&display=swap'],
+    },
+  },
+  axios: {
+    proxy: true,
+  },
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: server + '/graphql',
+        httpEndpoint: `${WWW_URL}/graphql`,
+        browserHttpEndpoint: '/graphql',
         // wsEndpoint: server.replace('http', 'ws') + '/graphql',
       },
     },
@@ -49,11 +98,20 @@ export default {
   },
   proxy: {
     '/graphql': HTTP_ENDPOINT,
-    '/images': HTTP_ENDPOINT,
+    '/api': HTTP_ENDPOINT,
   },
-  webfontloader: {
-    google: {
-      families: ['Lato:400,700'], //Loads Lato font with weights 400 and 700
+  build: {
+    babel: {
+      presets({ isServer }) {
+        const targets = isServer ? { node: 'current' } : { ie: 11 }
+        return [[require.resolve('@babel/preset-env'), { targets }]]
+      },
+      plugins: [
+        '@babel/syntax-dynamic-import',
+        '@babel/transform-runtime',
+        '@babel/transform-async-to-generator',
+      ],
     },
+    parallel: true,
   },
 }

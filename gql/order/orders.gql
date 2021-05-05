@@ -1,0 +1,61 @@
+query orders($page: Int, $search: String, $limit: Int, $sort: String) {
+  orders(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+      orderNo
+      createdAt
+      userFirstName
+      userLastName
+      userPhone
+      user {
+        firstName
+        lastName
+        email
+        phone
+        role
+      }
+      amount {
+        qty
+        subtotal
+        tax
+        discount
+        total
+        shipping
+      }
+      paymentMode
+      paymentAmount
+      payment {
+        amount_paid
+        amount_due
+      }
+      address {
+        firstName
+        lastName
+        address
+        lat
+        lng
+      }
+
+      items {
+        pid
+        posInvoiceNo
+        itemOrderNo
+        name
+        img
+        slug
+        price
+        qty
+        shippingCharge
+        status
+        brandName
+        brandImg
+        vendor {
+          store
+        }
+      }
+    }
+  }
+}

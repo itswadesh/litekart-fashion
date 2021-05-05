@@ -1,0 +1,18 @@
+query country($id: String) {
+  country(id: $id) {
+    id
+    name
+    value
+    code
+    img
+    flag
+    lang
+    states {
+      name
+    }
+    sort
+    active
+    createdAt
+    updatedAt
+  }
+}

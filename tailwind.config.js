@@ -1,33 +1,48 @@
-/*
-** TailwindCSS Configuration File
-**
-** Docs: https://tailwindcss.com/docs/configuration
-** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
-*/
 module.exports = {
-  theme: {
-  extend:{
-    // fontSize:{
-    //   '8xl': '6rem'
-    // },
-    // spacing:{
-    //   72: '18rem',
-    //   84: '21rem',
-    //   96: '24rem',
-    // }
-  }
-},
-  variants: {},
-  plugins: [],
+  mode: 'jit',
   purge: {
-    // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
-    enabled: process.env.NODE_ENV === 'production',
     content: [
-      'components/**/*.vue',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'plugins/**/*.js',
-      'nuxt.config.js'
-    ]
-  }
+      './components/**/*.{vue,js}',
+      './shared/components/**/*.{vue,js}',
+      './layouts/**/*.vue',
+      './pages/**/*.vue',
+      './plugins/**/*.{js,ts}',
+      './nuxt.config.{js,ts}',
+    ],
+  },
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          200: '#FCD34D', //light yellow
+          500: '#B26E12', //golden
+        },
+        secondary: {
+          100: '#dff7d5', //very light green
+          200: '#32CD32', //green
+          300: '#9CF1FE', //light blue
+          400: '#78f547', //light green
+          500: '#32AFC8;', //blue
+        },
+        accent: {
+          100: '#ffe0db', //very light red
+          500: '#ff8c00', //light-orange
+          600: '#C53193;', //pink
+          700: '#ff4500', //orange
+          800: '#c30b4e', //dark-pink
+          900: '#FF461B;', //red
+        },
+      },
+      fontFamily: {
+        sans: ['sofia-pro'],
+      },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+    },
+  },
+  plugins: [require('@tailwindcss/forms'), require('tailwindcss-rtl')],
 }

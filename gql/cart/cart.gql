@@ -1,0 +1,42 @@
+query cart {
+  cart {
+    id
+    items {
+      pid
+      barcode
+      tax
+      vendor {
+        id
+        store
+        firstName
+        lastName
+        phone
+      }
+      brand {
+        id
+        name
+      }
+      name
+      slug
+      qty
+      price
+      shippingCharge
+      img
+      options
+      tracking
+    }
+    qty
+    subtotal
+    discount {
+      code
+      value
+      text
+      amount
+    }
+    shipping {
+      charge
+    }
+    total
+    tax
+  }
+}

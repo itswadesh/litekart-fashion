@@ -1,0 +1,3 @@
+mutation collectPayment($id: ID!, $codPaid: Int) {
+  collectPayment(id: $id, codPaid: $codPaid)
+}
