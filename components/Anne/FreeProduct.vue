@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="product"
-    class="w-full max-w-sm p-4 overflow-hidden md:w-1/2 lg:w-1/3 xl:w-1/4 lg:mb-4"
+    class="w-full max-w-sm pr-4 overflow-hidden md:w-1/2 lg:w-1/3 xl:w-1/4 lg:mb-4"
   >
     <nuxt-link
       to="/"
