@@ -9,11 +9,11 @@
         muted
       />
     </div>
-    <div class="my-20">
-      <div class="flex flex-wrap justify-start w-full my-5">
+    <div class="container mx-auto my-20">
+      <div class="flex flex-wrap justify-center w-full my-5">
         <FreeProduct v-for="(i, ix) in items" :key="ix" :product="i" class="" />
       </div>
-      <div class="flex flex-wrap justify-start w-full my-5">
+      <div class="flex flex-wrap justify-center w-full my-5">
         <FreeProduct v-for="(i, ix) in items" :key="ix" :product="i" class="" />
       </div>
     </div>
