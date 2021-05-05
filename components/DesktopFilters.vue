@@ -21,14 +21,14 @@
       class="flex flex-wrap items-center my-2 text-xs ms-3 me-2"
     >
       <div
-        class="px-2 py-1 bg-gray-200 border rounded border-gray-50"
+        class="flex items-center px-2 py-1 bg-gray-200 border rounded border-gray-50"
         v-for="(i, ix) in v"
         :key="ix"
       >
         {{ i }}
         <button
           aria-hidden="true"
-          class="hover:bg-white ms-1"
+          class="ml-1 hover:bg-white"
           @click="remove(k, i)"
         >
           <svg
