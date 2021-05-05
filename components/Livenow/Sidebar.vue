@@ -139,13 +139,14 @@
     <!-- Sign up section start  -->
     <div class="p-4 my-5 bg-white rounded-md shadow-md">
       <h1 class="text-xl font-bold tracking-wide uppercase">
-        join the <span class="text-indigo-500">twitch</span> community!!!
+        join the
+        <span class="text-indigo-500 cursor-pointer">twitch</span> community!!!
       </h1>
       <h5 class="mt-1 text-gray-600">
         Discover the best live streams anywhere
       </h5>
       <button
-        class="px-4 py-2 mt-2 font-bold tracking-wide text-white bg-indigo-500 rounded-md shadow-md hover:bg-opactity-80 focus:outline-none"
+        class="px-4 py-2 mt-2 font-bold tracking-wide text-white bg-indigo-500 rounded-md shadow-md hover:bg-indigo-400 focus:outline-none"
       >
         Sign up
       </button>

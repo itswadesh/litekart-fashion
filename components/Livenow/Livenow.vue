@@ -5,18 +5,13 @@
       <h4 class="pb-2 font-semibold tracking-wide">
         All abord the Hype Train!
       </h4>
-      <div class="flex flex-wrap justify-start w-full">
-        <FreeProduct
-          v-for="(i, ix) in items"
-          :key="ix"
-          :product="i"
-          class="mr-4"
-        />
+      <div class="flex flex-wrap justify-start w-full my-5">
+        <FreeProduct v-for="(i, ix) in items" :key="ix" :product="i" class="" />
       </div>
       <div class="flex items-center my-5">
         <hr class="w-full border-t border-gray-500" />
         <div
-          class="flex -mt-0.5 items-center px-4 text-indigo-500 max-w-max whitespace-nowrap hover:text-indigo-700"
+          class="flex cursor-pointer -mt-0.5 items-center px-4 text-indigo-500 max-w-max whitespace-nowrap hover:text-indigo-700"
         >
           <h5 class="font-semibold">Show more</h5>
           <svg
@@ -46,17 +41,12 @@
         <span class="text-indigo-500 uppercase"> Minecraft</span> Channels
       </h4>
       <div class="flex flex-wrap justify-start w-full">
-        <FreeProduct
-          v-for="(i, ix) in items"
-          :key="ix"
-          :product="i"
-          class="mr-4"
-        />
+        <FreeProduct v-for="(i, ix) in items" :key="ix" :product="i" class="" />
       </div>
       <div class="flex items-center my-5">
         <hr class="w-full border-t border-gray-500" />
         <div
-          class="flex -mt-0.5 items-center px-4 text-indigo-500 max-w-max whitespace-nowrap hover:text-indigo-700"
+          class="flex cursor-pointer -mt-0.5 items-center px-4 text-indigo-500 max-w-max whitespace-nowrap hover:text-indigo-700"
         >
           <h5 class="font-semibold">Show more</h5>
           <svg
@@ -85,18 +75,13 @@
         Recommended
         <span class="text-indigo-500 uppercase"> Valorant</span> Channels
       </h4>
-      <div class="flex flex-wrap justify-start w-full">
-        <FreeProduct
-          v-for="(i, ix) in items"
-          :key="ix"
-          :product="i"
-          class="mr-4"
-        />
+      <div class="flex flex-wrap justify-start w-full my-5">
+        <FreeProduct v-for="(i, ix) in items" :key="ix" :product="i" class="" />
       </div>
       <div class="flex items-center my-5">
         <hr class="w-full border-t border-gray-500" />
         <div
-          class="flex -mt-0.5 items-center px-4 text-indigo-500 max-w-max whitespace-nowrap hover:text-indigo-700"
+          class="flex cursor-pointer -mt-0.5 items-center px-4 text-indigo-500 max-w-max whitespace-nowrap hover:text-indigo-700"
         >
           <h5 class="font-semibold">Show more</h5>
           <svg

@@ -1,5 +1,5 @@
 <template>
-  <section class="px-20 py-5">
+  <section class="px-2 py-5 md:px-20">
     <div>
       <video
         class="object-cover w-full h-96"
@@ -11,20 +11,10 @@
     </div>
     <div class="my-20">
       <div class="flex flex-wrap justify-start w-full my-5">
-        <FreeProduct
-          v-for="(i, ix) in items"
-          :key="ix"
-          :product="i"
-          class="mr-4"
-        />
+        <FreeProduct v-for="(i, ix) in items" :key="ix" :product="i" class="" />
       </div>
       <div class="flex flex-wrap justify-start w-full my-5">
-        <FreeProduct
-          v-for="(i, ix) in items"
-          :key="ix"
-          :product="i"
-          class="mr-4"
-        />
+        <FreeProduct v-for="(i, ix) in items" :key="ix" :product="i" class="" />
       </div>
     </div>
   </section>

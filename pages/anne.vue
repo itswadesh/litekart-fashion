@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="relative flex justify-center w-full overflow-hidden rlative">
+  <div class="padbtm">
+    <div class="relative flex justify-center w-full">
       <video
         class="object-cover w-full h-96"
         :src="'https://res.cloudinary.com/itswadesh/video/upload/v1620190766/Anne/video.mp4'"
@@ -22,7 +22,7 @@
         Enter Site
       </button>
     </div>
-    <div class="absolute flex flex-wrap justify-center w-full -mt-20">
+    <div class="absolute flex flex-wrap justify-center w-full -mt-28">
       <FreeProduct v-for="(i, ix) in items" :key="ix" :product="i" />
     </div>
   </div>
@@ -57,4 +57,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.padbtm {
+  padding-bottom: 700px;
+}
+</style>

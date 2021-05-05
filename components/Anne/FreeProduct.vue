@@ -1,8 +1,5 @@
 <template>
-  <div
-    v-if="product"
-    class="w-full max-w-sm pr-4 overflow-hidden md:w-1/2 lg:w-1/3 xl:w-1/4 lg:mb-4"
-  >
+  <div v-if="product" class="w-40 m-1.5 overflow-hidden md:w-72">
     <nuxt-link
       to="/"
       rel="prefetch"
@@ -13,11 +10,7 @@
       >
         Live Now
       </button>
-      <img
-        src=""
-        class="object-cover object-top min-w-full"
-        style="width: 352px; height: 176px"
-      />
+      <img src="" class="object-cover object-top w-full h-40 md:h-60" />
       <div class="px-6 py-4">
         <div class="mb-2 text-xl font-bold truncate">{{ product.name }}</div>
         <div class="flex justify-between mb-2 text-base text-gray-600 truncate">
