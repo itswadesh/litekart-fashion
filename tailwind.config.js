@@ -37,6 +37,10 @@ module.exports = {
       fontFamily: {
         sans: ['sofia-pro'],
       },
+      spacing: {
+        108: '27rem',
+        116: '29rem',
+      },
     },
   },
   variants: {

@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-gray-100 padbtm">
+  <div class="bg-gray-100">
     <div class="relative flex justify-center w-full">
       <video
-        class="object-cover w-full h-96"
+        class="object-cover w-full h-116"
         :src="'https://res.cloudinary.com/itswadesh/video/upload/v1620190766/Anne/video.mp4'"
         autoplay
         loop
@@ -16,9 +16,15 @@
           class="object-cover w-full h-64"
         />
       </div> -->
+      <div
+        class="absolute w-full py-4 text-3xl font-bold text-center bg-white cursor-pointer top-28 bg-opacity-60"
+      >
+        Lorem Ipsum Dolor Sit Amet
+      </div>
+
       <nuxt-link
         to="/search"
-        class="absolute top-0 py-3 mt-40 text-center text-white rounded shadow-lg px-9 bg-primary-500 hover:bg-gray-200 hover:text-primary-500"
+        class="absolute py-3 text-center text-white rounded shadow-lg top-60 px-9 bg-primary-500 hover:bg-gray-200 hover:text-primary-500"
       >
         Enter Site
       </nuxt-link>
@@ -35,14 +41,33 @@
         />
       </div>
     </div>
+
+    <div
+      class="pb-20 bg-no-repeat margintop"
+      style="background-image: url('/img/pink.jpg')"
+    >
+      <div class="pt-10 pb-8 text-2xl font-bold text-center">How It Works</div>
+      <div class="container mx-auto">
+        <div class="container flex flex-wrap justify-center mx-auto">
+          <HomeHeroCards2
+            v-for="(i, ix) in items2"
+            :key="ix"
+            :product="i"
+            class="flex-1"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import HomeHeroCards from '~/components/Anne/HomeHeroCards'
+import HomeHeroCards2 from '~/components/Anne/HomeHeroCards2'
 export default {
   components: {
     HomeHeroCards,
+    HomeHeroCards2,
   },
   data() {
     return {
@@ -93,6 +118,36 @@ Unlock engagement, awareness with tech-enabled Live Shopping eCommerce brands.`,
           footer: `Live | Publish | Lucky Draw | Schedule`,
         },
       ],
+      items2: [
+        {
+          link: '/live-now-section',
+          img: '/img/business-grow.jpg',
+          name: 'Grow your business with your own live shopping solution',
+          description:
+            'With AnneBiz you engage with customers virtually and send your products directly through video and chat',
+        },
+        {
+          link: '/live-now-section',
+          img: '/img/business-grow.jpg',
+          name: 'Grow your business with your own live shopping solution',
+          description:
+            'With AnneBiz you engage with customers virtually and send your products directly through video and chat',
+        },
+        {
+          link: '/live-now-section',
+          img: '/img/business-grow.jpg',
+          name: 'Grow your business with your own live shopping solution',
+          description:
+            'With AnneBiz you engage with customers virtually and send your products directly through video and chat',
+        },
+        {
+          link: '/live-now-section',
+          img: '/img/business-grow.jpg',
+          name: 'Grow your business with your own live shopping solution',
+          description:
+            'With AnneBiz you engage with customers virtually and send your products directly through video and chat',
+        },
+      ],
     }
   },
   methods: {},
@@ -101,7 +156,7 @@ Unlock engagement, awareness with tech-enabled Live Shopping eCommerce brands.`,
 </script>
 
 <style scoped>
-.padbtm {
-  padding-bottom: 1000px;
+.margintop {
+  margin-top: 700px;
 }
 </style>

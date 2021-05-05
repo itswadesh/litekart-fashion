@@ -8,7 +8,7 @@
       <button
         class="w-full py-3 text-center text-white rounded-t-md bg-primary-500 hover:bg-gray-200 hover:text-primary-500"
       >
-        Live Now
+        {{ product.heading }}
       </button>
       <img src="" class="object-cover object-top w-full h-40 md:h-60" />
       <div class="px-6 py-4">
