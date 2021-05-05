@@ -17,12 +17,12 @@
         />
       </div> -->
       <button
-        class="absolute bottom-0 px-8 py-4 mt-20 text-center text-white rounded-t-lg shadow-lg bg-primary-500 hover:bg-gray-200 hover:text-primary-500"
+        class="absolute top-0 py-3 mt-40 text-center text-white px-9 bg-primary-500 hover:bg-gray-200 hover:text-primary-500"
       >
         Enter Site
       </button>
     </div>
-    <div class="flex flex-wrap justify-center m-2">
+    <div class="absolute flex flex-wrap justify-center w-full -mt-20">
       <FreeProduct v-for="(i, ix) in items" :key="ix" :product="i" />
     </div>
   </div>

@@ -8,6 +8,11 @@
       rel="prefetch"
       class="block bg-white rounded-md shadow-md avatar zoom hover:shadow-lg"
     >
+      <button
+        class="w-full py-3 text-center text-white rounded-t-md bg-primary-500 hover:bg-gray-200 hover:text-primary-500"
+      >
+        Live Now
+      </button>
       <img
         src=""
         class="object-cover object-top min-w-full"
