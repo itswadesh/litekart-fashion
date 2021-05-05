@@ -19,119 +19,23 @@
     <!-- Recommended channels section end -->
     <!-- Channels section start  -->
     <div class="py-2">
-      <!-- v-for="(i, ix) in items" :key="ix" -->
-      <div class="flex justify-between pt-2">
+      <div v-for="(i, ix) in items" :key="ix" class="flex justify-between pt-2">
         <div class="flex items-center">
           <div class="w-10 h-10 rounded-full">
             <img
-              src="/img/workout.jpg"
+              :src="i.img"
               alt=""
               class="object-cover object-top w-10 h-10 rounded-full"
             />
           </div>
           <div class="ml-2">
-            <h5 class="font-semibold uppercase">valorant</h5>
-            <h5 class="text-sm uppercase">valorant</h5>
+            <h5 class="font-semibold uppercase">{{ i.name1 }}</h5>
+            <h5 class="text-sm uppercase">{{ i.name2 }}</h5>
           </div>
         </div>
         <div class="flex items-center">
           <div class="w-3 h-3 mr-1 bg-red-500 rounded-full"></div>
-          <span>19.7k</span>
-        </div>
-      </div>
-      <div class="flex justify-between pt-2">
-        <div class="flex items-center">
-          <div class="w-10 h-10 rounded-full">
-            <img
-              src="/img/workout.jpg"
-              alt=""
-              class="object-cover object-top w-10 h-10 rounded-full"
-            />
-          </div>
-          <div class="ml-2">
-            <h5 class="font-semibold uppercase">valorant</h5>
-            <h5 class="text-sm uppercase">valorant</h5>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-3 h-3 mr-1 bg-red-500 rounded-full"></div>
-          <span>19.7k</span>
-        </div>
-      </div>
-      <div class="flex justify-between pt-2">
-        <div class="flex items-center">
-          <div class="w-10 h-10 rounded-full">
-            <img
-              src="/img/workout.jpg"
-              alt=""
-              class="object-cover object-top w-10 h-10 rounded-full"
-            />
-          </div>
-          <div class="ml-2">
-            <h5 class="font-semibold uppercase">valorant</h5>
-            <h5 class="text-sm uppercase">valorant</h5>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-3 h-3 mr-1 bg-red-500 rounded-full"></div>
-          <span>19.7k</span>
-        </div>
-      </div>
-      <div class="flex justify-between pt-2">
-        <div class="flex items-center">
-          <div class="w-10 h-10 rounded-full">
-            <img
-              src="/img/workout.jpg"
-              alt=""
-              class="object-cover object-top w-10 h-10 rounded-full"
-            />
-          </div>
-          <div class="ml-2">
-            <h5 class="font-semibold uppercase">valorant</h5>
-            <h5 class="text-sm uppercase">valorant</h5>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-3 h-3 mr-1 bg-red-500 rounded-full"></div>
-          <span>19.7k</span>
-        </div>
-      </div>
-      <div class="flex justify-between pt-2">
-        <div class="flex items-center">
-          <div class="w-10 h-10 rounded-full">
-            <img
-              src="/img/workout.jpg"
-              alt=""
-              class="object-cover object-top w-10 h-10 rounded-full"
-            />
-          </div>
-          <div class="ml-2">
-            <h5 class="font-semibold uppercase">valorant</h5>
-            <h5 class="text-sm uppercase">valorant</h5>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-3 h-3 mr-1 bg-red-500 rounded-full"></div>
-          <span>19.7k</span>
-        </div>
-      </div>
-      <div class="flex justify-between pt-2">
-        <div class="flex items-center">
-          <div class="w-10 h-10 rounded-full">
-            <img
-              src="/img/workout.jpg"
-              alt=""
-              class="object-cover object-top w-10 h-10 rounded-full"
-            />
-          </div>
-          <div class="ml-2">
-            <h5 class="font-semibold uppercase">valorant</h5>
-            <h5 class="text-sm uppercase">valorant</h5>
-          </div>
-        </div>
-        <div class="flex items-center">
-          <div class="w-3 h-3 mr-1 bg-red-500 rounded-full"></div>
-          <span>19.7k</span>
+          <span>{{ i.live }}</span>
         </div>
       </div>
     </div>
@@ -157,13 +61,48 @@
 
 <script>
 export default {
-  // data(){
-  //   return(){
-  //     {
-  //       name:'ddd',
-  //     }
-  //   }
-  // }
+  data() {
+    return {
+      items: [
+        {
+          name1: 'valorant',
+          name2: 'valorant',
+          live: '19.7k',
+          img: '/img/workout.jpg',
+        },
+        {
+          name1: 'valorant',
+          name2: 'valorant',
+          live: '19.7k',
+          img: '/img/workout.jpg',
+        },
+        {
+          name1: 'valorant',
+          name2: 'valorant',
+          live: '19.7k',
+          img: '/img/workout.jpg',
+        },
+        {
+          name1: 'valorant',
+          name2: 'valorant',
+          live: '19.7k',
+          img: '/img/workout.jpg',
+        },
+        {
+          name1: 'valorant',
+          name2: 'valorant',
+          live: '19.7k',
+          img: '/img/workout.jpg',
+        },
+        {
+          name1: 'valorant',
+          name2: 'valorant',
+          live: '19.7k',
+          img: '/img/workout.jpg',
+        },
+      ],
+    }
+  },
 }
 </script>
 

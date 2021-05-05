@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed z-20 w-full bg-white shadow-lg opacity-75 blur">
+  <header class="fixed z-20 w-full shadow-lg frosted">
     <nav class="container flex flex-wrap items-center justify-between mx-auto">
       <div
         class="flex flex-wrap items-center flex-shrink-0 order-1 text-orange"
@@ -8,8 +8,8 @@
           <img class="h-6 mx-2" v-lazy="`${settings.logo}`" alt="Home" />
         </nuxt-link>
       </div>
-      <div class="order-4 w-full px-2 md:w-1/2 md:mb-0 md:pr-6 md:order-3">
-        <Search class="pb-2 md:pb-0" />
+      <div class="order-4 w-full md:w-1/2 md:order-3">
+        <Search class="" />
       </div>
       <div class="order-3 py-3 ml-10 mr-3 md:order-4 headings">
         <div v-if="geo" class="flex text-sm md:hidden">
@@ -140,6 +140,10 @@ export default {
 </script>
 
 <style scoped>
+.frosted {
+  backdrop-filter: blur(15px);
+  background-color: hsla(0, 0%, 100%, 0.75);
+}
 .blur {
   backdrop-filter: saturate(180%) blur(5px);
 }

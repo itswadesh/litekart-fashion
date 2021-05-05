@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 z-10 w-full px-2 py-2 text-center bg-white lg:w-1/2">
+  <div class="w-full p-2">
     <form
       class="relative"
       novalidate
@@ -21,11 +21,14 @@
         aria-label="Search Box"
         type="text"
         v-model="search"
-        class="w-full h-10 px-10 pr-4 text-xs border-0 border-gray-200 rounded shadow bg-purple-white focus:outline-none"
+        class="w-full h-10 px-10 pr-4 text-xs bg-transparent border border-gray-400 rounded shadow bg-purple-white focus:outline-none"
         placeholder="Search for food"
         name="search"
       />
-      <nuxt-link :to="localePath('/')" class="absolute top-0 right-0 focus:outline-none">
+      <nuxt-link
+        :to="localePath('/')"
+        class="absolute top-0 right-0 focus:outline-none"
+      >
         <svg
           class="w-6 h-6 m-2 text-gray-600 transition-all ease-out transition-medium"
           viewBox="0 0 24 24"
