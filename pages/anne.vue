@@ -52,13 +52,7 @@
       </div>
     </div>
     <div class="mx-auto my-10 lg:my-20 lg:container">
-      <HomeHeroCards
-        v-for="(i, ix) in items"
-        :key="ix"
-        :product="i"
-        :ix="ix"
-        class=""
-      />
+      <HomeHeroCards v-for="(i, ix) in items" :key="ix" :product="i" class="" />
     </div>
 
     <div
@@ -111,18 +105,18 @@ export default {
         {
           link: '/stored-videos',
           title: 'Stored Videos',
-          img: '/home/prime-streaming-image.png',
+          img: '/home/stored-videos-image.png',
           name: `“Anne.Biz travels the globe in search of the world’s most amazing
 products. Products that are innovative, unique, effective and easy to
 use. Products that really matter and can make a positive impact in
 your life. “`,
-          description: 'description11',
+          description: 'description',
           footer: '',
         },
         {
           link: '/',
           title: 'Prime Streaming',
-          img: '/home/stored-videos-image.png',
+          img: '/home/prime-streaming-image.png',
           name: `ENJOY UNPARALEL LIVE SHOPPING EXPERIENCE!
 Unlock engagement, awareness with tech-enabled Live Shopping eCommerce brands.`,
           description: `<ul><li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Schedule Streaming</li>
