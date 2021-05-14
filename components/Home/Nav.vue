@@ -106,10 +106,10 @@ export default {
       })
     }
     try {
-      this.geo = this.$cookies.get('geo')
-      if (!this.geo && process.client) {
-        this.$router.push('/change-location')
-      }
+      // this.geo = this.$cookies.get('geo')
+      // if (!this.geo && process.client) {
+      //   this.$router.push('/change-location')
+      // }
     } catch (e) {
       this.errorStr = e
     } finally {

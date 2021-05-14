@@ -41,9 +41,9 @@ export default {
   mixins: [location],
   async mounted() {
     try {
-      this.geo = this.$cookies.get('geo')
+      // this.geo = this.$cookies.get('geo')
       if (!this.geo && process.client) {
-        this.$router.push('/change-location')
+        // this.$router.push('/change-location')
         // this.gettingLocation = true;
         // this.geo = await this.locateMe();
       }

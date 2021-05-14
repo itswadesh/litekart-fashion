@@ -22,7 +22,7 @@
         type="text"
         v-model="search"
         class="w-full h-10 px-10 pr-4 text-xs bg-transparent border border-gray-300 rounded shadow focus:border-black focus:ring-0 bg-purple-white focus:outline-none"
-        placeholder="Search for food"
+        placeholder="Search for products"
         name="search"
       />
       <nuxt-link
