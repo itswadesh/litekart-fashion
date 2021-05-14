@@ -21,7 +21,7 @@
         aria-label="Search Box"
         type="text"
         v-model="search"
-        class="w-full h-10 px-10 pr-4 text-xs bg-transparent border border-gray-400 rounded shadow bg-purple-white focus:outline-none"
+        class="w-full h-10 px-10 pr-4 text-xs bg-transparent border border-gray-300 rounded shadow focus:border-black focus:ring-0 bg-purple-white focus:outline-none"
         placeholder="Search for food"
         name="search"
       />
@@ -30,7 +30,7 @@
         class="absolute top-0 right-0 focus:outline-none"
       >
         <svg
-          class="w-6 h-6 m-2 text-gray-600 transition-all ease-out transition-medium"
+          class="w-6 h-6 m-2 text-gray-400 transition-all ease-out transition-medium"
           viewBox="0 0 24 24"
           fill="currentColor"
         >

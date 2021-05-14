@@ -32,20 +32,20 @@
             class="flex flex-col items-center mx-4"
             :to="!user ? '/login' : '/my'"
           >
-            <SmileIcon class="h-5" />
-            <div class="text-xs font-bold headings">Profile</div>
+            <img src="/img/user.png" alt="" class="w-5 h-5" />
+            <span class="text-xs font-bold">Profile</span>
           </nuxt-link>
-          <!-- <nuxt-link class="flex flex-col items-center mx-3" to="/wishlist">
-            <HeartIcon class="h-5 center" />
-            <div class="text-xs font-bold headings">Wishlist</div>
-          </nuxt-link>-->
+          <nuxt-link class="flex flex-col items-center mx-3" to="/wishlist">
+            <img src="/img/favourite.png" alt="" class="w-5 h-5" />
+            <span class="text-xs font-bold">Favourite</span>
+          </nuxt-link>
           <nuxt-link
             class="relative flex flex-col items-center mx-3"
             to="/cart"
           >
-            <ShoppingCartIcon class="h-5 ml-1" />
+            <img src="/img/cart.png" alt="" class="w-5 h-5" />
             <div class="flex text-xs font-bold">
-              Cart
+              <span class="text-xs font-bold">Cart</span>
               <div
                 class="absolute flex items-center justify-center px-1 font-bold text-center rounded-full primary desktop-badge"
                 style="padding-top: 2px"
