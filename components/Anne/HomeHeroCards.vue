@@ -17,7 +17,7 @@
           <div class="my-8">
             <div class="text-lg font-bold">{{ product.name }}</div>
             <div
-              class="flex my-5 text-sm prose text-gray-600 lg:text-base"
+              class="flex my-5 text-sm text-gray-600 lg:text-base"
               v-html="product.description"
             ></div>
             <div class="text-lg font-bold lg:text-2xl text-primary-500">
