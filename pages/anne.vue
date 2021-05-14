@@ -133,14 +133,14 @@ Unlock engagement, awareness with tech-enabled Live Shopping eCommerce brands.`,
       items2: [
         {
           link: '/live-now-section',
-          img: '/img/Image 01 of how it works.png',
+          img: '/img/Image-01-of-how-it-works.png',
           name: 'Grow your business with your own live shopping solution',
           description:
             'With AnneBiz you engage with customers virtually and send your products directly through video and chat.',
         },
         {
           link: '/live-now-section',
-          img: '/img/Image 02 of how it works.png',
+          img: '/img/Image-02-of-how-it-works.png',
           name:
             'Find out how we can help you reach more customers in just 5 minutes: Own the live sales experience ',
           description:
@@ -148,40 +148,40 @@ Unlock engagement, awareness with tech-enabled Live Shopping eCommerce brands.`,
         },
         {
           link: '/live-now-section',
-          img: '/img/Image 03 of how it works.png',
+          img: '/img/Image-03-of-how-it-works.png',
           name: 'Maximize reach for your live sales event',
           description:
             'Your live videos can also appear simultaniously on social media channels, For example Facebook, You Tube, Instagram and more. This will help you to grow your outreach and customer base each time you publish content.',
         },
         {
           link: '/live-now-section',
-          img: '/img/Image 04 of how it works.png',
+          img: '/img/Image-04-of-how-it-works.png',
           name: 'Easily create engaging experience.',
           description:
             'People can now watch your videos and ofcourse purchase products, ask questions, and participete in lucky draws and much more.',
         },
         {
           link: '/live-now-section',
-          img: '/img/Image 05 of how it works.png',
+          img: '/img/Image-05-of-how-it-works.png',
           name: 'Get more customers',
           description:
             'Everytime when viewers interact with your content, they will leave there contact details, growing your customer base over time.',
         },
         {
           link: '/live-now-section',
-          img: '/img/Image 06 of how it works.png',
+          img: '/img/Image-06-of-how-it-works.png',
           name: 'Not additionl equipment needed',
           description: `You don't need any equipment other than your mobile phone, or a computer with a webcam. Of course, if you want you can also use professional studio equipment and create your own live shopping TV station.`,
         },
         {
           link: '/live-now-section',
-          img: '/img/Image 06 of how it works.png',
+          img: '/img/Image-06-of-how-it-works.png',
           name: 'E-commerce platform included',
           description: `Use our build in checkout flow and start receiving orders, or integrate with your existing e-commerce platform.`,
         },
         {
           link: '/live-now-section',
-          img: '/img/Image 06 of how it works.png',
+          img: '/img/Image-06-of-how-it-works.png',
           name: 'Start increasing e-commerce conversion',
           description: `Try with a free DEMO and take your live sales events to the next level.`,
         },
