@@ -40,7 +40,7 @@
             corporis cumque totam? Ratione, illum voluptatum. Numquam molestiae
             dignissimos aut recusandae.
           </p>
-          <div class="mt-10">
+          <div class="mt-1.50">
             <nuxt-link
               to="/search"
               class="py-3 text-center text-white rounded shadow-lg focus:outline-none px-9 bg-primary-500 hover:bg-gray-200 hover:text-primary-500"
@@ -90,14 +90,14 @@ export default {
           title: 'Live Now',
           img: '/img/Live now Image.png',
           name: 'Enjoy tech-enabled Live Shopping e-Commerce brands.',
-          description: `<ul><li>Seamless Checkout</li>
-<li>In-video purchase</li>
-<li>Brand-owned experience control</li>
-<li>Manu of Live Vendors to choose from.</li>
-<li>Take control of your live sales events.</li>
-<li>Grow your customer base every time you go live.</li>
-<li>With Anne.Biz, live stream shopping platform, you own your</li>
-<li>audience and brand.</li></ul>`,
+          description: `<ul><li class="flex items-start py-1 "><div class="w-3 mt-1.5 h-3 mr-2 rounded-full bg-primary-500"></div>Seamless Checkout</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>In-video purchase</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Brand-owned experience control</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Manu of Live Vendors to choose from.</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Take control of your live sales events.</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Grow your customer base every time you go live.</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>With Anne.Biz, live stream shopping platform, you own your</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>audience and brand.</li></ul>`,
           footer: 'Stand Out, Sell & Buy Live.',
         },
         {
@@ -117,14 +117,14 @@ your life. “`,
           img: '/img/Prime streaming Image.png',
           name: `ENJOY UNPARALEL LIVE SHOPPING EXPERIENCE!
 Unlock engagement, awareness with tech-enabled Live Shopping eCommerce brands.`,
-          description: `<ul><li>Schedule Streaming</li>
-<li>Seamless Checkout</li>
-<li>In-video purchase</li>
-<li>Brand-owned experience control</li>
-<li>One to one pre-scheduled Streaming.</li>
-<li>Manu of Live Vendors to choose from.</li>
-<li>Stored Videos</li>
-<li>Brand-owned experience control</li></ul>`,
+          description: `<ul><li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Schedule Streaming</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Seamless Checkout</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>In-video purchase</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Brand-owned experience control</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>One to one pre-scheduled Streaming.</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Manu of Live Vendors to choose from.</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Stored Videos</li>
+<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Brand-owned experience control</li></ul>`,
           footer: `Live | Publish | Lucky Draw | Schedule`,
         },
       ],

@@ -10,16 +10,14 @@
             {{ product.title }}
           </button>
 
-          <div class="py-4">
-            <div class="mb-2 text-lg font-bold">{{ product.name }}</div>
+          <div class="my-8">
+            <div class="text-lg font-bold">{{ product.name }}</div>
             <div
-              class="flex justify-between mb-2 text-base prose text-gray-600"
+              class="flex my-5 text-base prose text-gray-600"
               v-html="product.description"
             ></div>
-            <div
-              class="flex items-center justify-between text-base text-primary-500"
-            >
-              <div class="text-2xl font-bold">{{ product.footer }}</div>
+            <div class="text-2xl font-bold text-primary-500">
+              {{ product.footer }}
             </div>
           </div>
         </div>
