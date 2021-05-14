@@ -3,7 +3,7 @@
     <nuxt-link
       :to="product.link"
       rel="prefetch"
-      class="block p-4 bg-white border-b-8 border-white rounded-md shadow lg:p-10 avatar hover:border-primary-500 zoom hover:shadow-md"
+      class="flex-1 block p-4 bg-white border-b-8 border-white rounded-md shadow lg:p-10 avatar hover:border-primary-500 zoom hover:shadow-md"
     >
       <img v-lazy="product.img" class="h-40 mx-auto" />
       <div class="">
