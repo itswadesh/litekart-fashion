@@ -27,7 +27,7 @@
       />
       <nuxt-link
         :to="localePath('/')"
-        class="absolute top-0 right-0 focus:outline-none"
+        class="absolute top-0 right-0 block md:hidden focus:outline-none"
       >
         <svg
           class="w-6 h-6 m-2 text-gray-400 transition-all ease-out transition-medium"
