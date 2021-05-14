@@ -1,5 +1,5 @@
 <template>
-  <div v-if="product" class="container w-full mx-auto my-5">
+  <div v-if="product" class="container w-full mx-auto my-5 lg:my-20">
     <nuxt-link
       :to="product.link"
       rel="prefetch"
