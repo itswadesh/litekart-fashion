@@ -1,8 +1,8 @@
 <template>
   <div class="bg-gray-100">
-    <div class="relative flex justify-center w-full">
+    <div class="relative justify-center w-full">
       <video
-        class="object-cover w-full h-116"
+        class="object-cover w-full h-96 lg:h-116"
         :src="'https://res.cloudinary.com/itswadesh/video/upload/v1620190766/Anne/video.mp4'"
         autoplay
         loop
@@ -30,17 +30,17 @@
       </nuxt-link> -->
 
       <div
-        class="absolute w-full text-center bg-white bg-opacity-60 top-56 h-60"
+        class="w-full text-center lg:bg-white lg:absolute lg:bg-opacity-60 top-56 h-60"
       >
-        <div class="w-2/3 mx-auto">
-          <h1 class="pt-8 text-4xl font-bold">Lorem Ipsum Heading Test</h1>
-          <p class="mt-5 text-sm">
+        <div class="mx-4 lg:mx-auto lg:w-2/3">
+          <h1 class="pt-8 text-2xl font-bold lg:text-4xl">
+            Lorem Ipsum Heading Test
+          </h1>
+          <p class="mt-2 text-sm lg:mt-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nemo
-            fugit qui dolores blanditiis eos eveniet ea, temporibus assumenda
-            corporis cumque totam? Ratione, illum voluptatum. Numquam molestiae
-            dignissimos aut recusandae.
+            fugit qui dolores blanditiis eos eveniet .
           </p>
-          <div class="mt-1.50">
+          <div class="mt-10">
             <nuxt-link
               to="/search"
               class="py-3 text-center text-white rounded shadow-lg focus:outline-none px-9 bg-primary-500 hover:bg-gray-200 hover:text-primary-500"
@@ -51,15 +51,17 @@
         </div>
       </div>
     </div>
-    <div class="container mx-auto my-20">
+    <div class="mx-auto my-10 lg:my-20 lg:container">
       <HomeHeroCards v-for="(i, ix) in items" :key="ix" :product="i" class="" />
     </div>
 
     <div
-      class="pb-20 mt-20 bg-no-repeat"
+      class="pb-20 mt-10 bg-no-repeat lg:mt-20"
       style="background-image: url('/img/pink.jpg')"
     >
-      <div class="py-10 text-4xl font-bold text-center">How It Works</div>
+      <div class="py-5 text-3xl font-bold text-center lg:py-10 lg:text-4xl">
+        How It Works
+      </div>
       <div class="container mx-auto">
         <div class="container flex flex-wrap justify-center px-3 mx-auto">
           <HowItWorks
@@ -90,14 +92,14 @@ export default {
           title: 'Live Now',
           img: '/img/Live now Image.png',
           name: 'Enjoy tech-enabled Live Shopping e-Commerce brands.',
-          description: `<ul><li class="flex items-start py-1 "><div class="w-3 mt-1.5 h-3 mr-2 rounded-full bg-primary-500"></div>Seamless Checkout</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>In-video purchase</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Brand-owned experience control</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Manu of Live Vendors to choose from.</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Take control of your live sales events.</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Grow your customer base every time you go live.</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>With Anne.Biz, live stream shopping platform, you own your</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>audience and brand.</li></ul>`,
+          description: `<ul><li class="flex items-start py-1 "><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Seamless Checkout</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>In-video purchase</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Brand-owned experience control</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Manu of Live Vendors to choose from.</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Take control of your live sales events.</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Grow your customer base every time you go live.</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>With Anne.Biz, live stream shopping platform, you own your</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>audience and brand.</li></ul>`,
           footer: 'Stand Out, Sell & Buy Live.',
         },
         {
@@ -117,14 +119,14 @@ your life. “`,
           img: '/img/Prime streaming Image.png',
           name: `ENJOY UNPARALEL LIVE SHOPPING EXPERIENCE!
 Unlock engagement, awareness with tech-enabled Live Shopping eCommerce brands.`,
-          description: `<ul><li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Schedule Streaming</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Seamless Checkout</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>In-video purchase</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Brand-owned experience control</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>One to one pre-scheduled Streaming.</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Manu of Live Vendors to choose from.</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Stored Videos</li>
-<li class="flex items-start py-1"><div class="w-3 h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Brand-owned experience control</li></ul>`,
+          description: `<ul><li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Schedule Streaming</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Seamless Checkout</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>In-video purchase</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Brand-owned experience control</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>One to one pre-scheduled Streaming.</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Manu of Live Vendors to choose from.</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Stored Videos</li>
+<li class="flex items-start py-1"><div class="w-2 h-2 lg:w-3 lg:h-3 mt-1.5 mr-2 rounded-full bg-primary-500"></div>Brand-owned experience control</li></ul>`,
           footer: `Live | Publish | Lucky Draw | Schedule`,
         },
       ],
