@@ -7,8 +7,8 @@
     >
       <!-- Data section start  -->
       <div
-        class="flex-1 order-1 mt-5 lg:w-1/2 lg:mt-0"
-        :class="ix % 2 == 0 ? 'order-2' : ''"
+        class="flex-1 mt-5 lg:w-1/2 lg:mt-0"
+        :class="ix % 2 == !0 ? 'order-2' : ''"
       >
         <div class="mx-4 lg:mx-auto lg:w-108">
           <button
@@ -32,8 +32,8 @@
       <!-- Data section end -->
       <!-- Image section start  -->
       <div
-        class="order-2 lg:w-1/2"
-        :class="ix % 2 == 0 ? 'order-1 ml-0 max-w-max' : ''"
+        class="lg:w-1/2"
+        :class="ix % 2 == !0 ? 'order-1 ml-0 max-w-max' : ''"
       >
         <img v-lazy="product.img" class="ml-auto h-96 lg:h-116 max-w-max" />
       </div>
