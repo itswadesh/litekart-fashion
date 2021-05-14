@@ -6,7 +6,10 @@
       class="flex flex-col-reverse lg:flex-row"
     >
       <!-- Data section start  -->
-      <div class="flex-1 mt-5 lg:w-1/2 lg:mt-0">
+      <div
+        class="flex-1 mt-5 lg:w-1/2 lg:mt-0"
+        :class="ix % 2 == 0 ? 'order-2' : ''"
+      >
         <div class="mx-4 lg:mx-auto lg:w-108">
           <button
             class="px-6 py-3 text-center text-white rounded-md shadow focus:outline-none bg-primary-500 hover:shadow"
@@ -28,7 +31,7 @@
       </div>
       <!-- Data section end -->
       <!-- Image section start  -->
-      <div class="lg:w-1/2">
+      <div class="order-1 lg:w-1/2" :class="ix % 2 == 0 ? 'order-1' : ''">
         <img v-lazy="product.img" class="ml-auto h-96 lg:h-116 max-w-max" />
       </div>
       <!-- Image section end -->
@@ -40,6 +43,7 @@
 export default {
   props: {
     product: { type: Object },
+    ix: { type: Number },
   },
 }
 </script>

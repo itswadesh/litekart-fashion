@@ -52,7 +52,13 @@
       </div>
     </div>
     <div class="mx-auto my-10 lg:my-20 lg:container">
-      <HomeHeroCards v-for="(i, ix) in items" :key="ix" :product="i" class="" />
+      <HomeHeroCards
+        v-for="(i, ix) in items"
+        :key="ix"
+        :product="i"
+        :ix="ix"
+        class=""
+      />
     </div>
 
     <div
