@@ -1,6 +1,6 @@
 <template>
   <section class="p-8">
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between h-72">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
