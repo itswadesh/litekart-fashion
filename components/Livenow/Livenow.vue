@@ -1,19 +1,17 @@
 <template>
   <section class="p-8">
     <div class="flex items-center justify-between h-72">
-      <div>
+      <div class="p-1 rounded-md hover:bg-gray-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-6 h-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+          class="w-7 h-7"
+          viewBox="0 0 20 20"
+          fill="currentColor"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M15 19l-7-7 7-7"
+            fill-rule="evenodd"
+            d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+            clip-rule="evenodd"
           />
         </svg>
       </div>
@@ -27,19 +25,17 @@
         ></iframe>
       </div>
       <!-- video section end -->
-      <div>
+      <div class="p-1 rounded-md hover:bg-gray-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-6 h-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+          class="w-7 h-7"
+          viewBox="0 0 20 20"
+          fill="currentColor"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9 5l7 7-7 7"
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
           />
         </svg>
       </div>
