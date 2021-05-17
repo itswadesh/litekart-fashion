@@ -161,8 +161,7 @@ export default {
           link: '#',
           img: '/img/eyeshadow-woman.jpg',
           title: 'Just Chatting',
-          name: 'xQcOW',
-          description: ' xQcOW Grand Theft Auto V',
+          viewers: '307k viewers',
           button: 'IRL',
         },
         {
