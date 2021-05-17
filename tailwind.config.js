@@ -41,6 +41,7 @@ module.exports = {
         108: '27rem',
         116: '29rem',
       },
+      // padding: { 'fluid-video': '56.25%' },
     },
   },
   variants: {

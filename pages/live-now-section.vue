@@ -1,5 +1,5 @@
 <template>
-  <section class="flex bg-gray-100 border-2 border-gray-800">
+  <section class="flex bg-gray-50">
     <div>
       <Sidebar />
     </div>
